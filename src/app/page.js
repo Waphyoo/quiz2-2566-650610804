@@ -25,7 +25,7 @@ export default function HomePage() {
         {/* map-loop render Comment component here */}
         {comments.map((comments) => (
           <Comment
-            id={comments.id}
+            key={comments.id}
             userImagePath={comments.userImagePath}
             username={comments.username}
             commentText={comments.commentText}
